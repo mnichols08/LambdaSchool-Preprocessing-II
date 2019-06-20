@@ -1,1 +1,22 @@
 // Mixins in here
+.button(@color,@pos){
+background: @color;
+color: #fff;
+border-radius: 1rem;
+padding: 1rem;
+border: 0;
+transition: all .2s;
+width: 100%;
+
+&:hover {
+    background: lighten(@color, 10%);
+}
+&:active {
+    transform: translateY(@pos);
+    background: lighten(@color, 5%);
+    box-shadow: 0 2px 1rem rgba(black, .5);
+}
+&:focus, &:active {
+    outline: none;
+}
+}

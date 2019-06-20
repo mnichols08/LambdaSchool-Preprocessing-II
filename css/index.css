@@ -168,12 +168,6 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media only screen and (max-width: 500px) {
-  header.container .text-content {
-    width: 75%;
-    margin: auto;
-  }
-}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -487,6 +481,12 @@ nav div a:hover {
 header {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media only screen and (max-width: 500px) {
+  header.container .text-content {
+    width: 75%;
+    margin: auto;
+  }
 }
 button {
   background: teal;
