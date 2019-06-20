@@ -578,7 +578,7 @@ header {
 }
 @media only screen and (min-width: 800px) and (max-width: 1129px) {
   header.container {
-    margin-top: 12rem;
+    margin-top: 8rem;
   }
 }
 header .text-content {
