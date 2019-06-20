@@ -168,6 +168,18 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  transition: all 0.5s;
+}
+@media only screen and (min-width: 1129px) {
+  .container {
+    max-width: 1000px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 51px) and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
 }
 @media only screen and (max-width: 500px) {
   .container {
@@ -179,6 +191,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media only screen and (min-width: 51px) and (max-width: 800px) {
+  .home .content-section {
+    align-items: center;
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 500px) {
   .home .content-section {
@@ -192,6 +210,11 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media only screen and (min-width: 1129px) {
+  .home .content-section .text-content {
+    width: 50%;
+  }
+}
 @media only screen and (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
@@ -203,6 +226,11 @@ img {
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media only screen and (min-width: 1129px) {
+  .home .content-section .img-content {
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 500px) {
   .home .content-section .img-content {
@@ -243,6 +271,11 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (min-width: 51px) and (max-width: 800px) {
+  .home .content-pick {
+    align-items: center;
+  }
+}
 @media only screen and (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
@@ -252,6 +285,11 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media only screen and (min-width: 51px) and (max-width: 800px) {
+  .home .content-pick .destination {
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 500px) {
   .home .content-pick .destination {
@@ -465,6 +503,14 @@ img {
 nav {
   border-bottom: 2px dashed #C0C0C0;
 }
+@media only screen and (min-width: 1129px) {
+  nav {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}
 nav div {
   max-width: 800px;
   margin: auto;
@@ -488,12 +534,46 @@ nav div a:hover {
     margin-bottom: -3rem;
   }
 }
+@media only screen and (min-width: 1129px) {
+  .desktop-only {
+    background: url(../img/fun-bus.jpg);
+    opacity: 0.25;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56rem;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position-y: -18rem;
+    z-index: -1;
+  }
+}
 header {
   padding-bottom: 10px;
   border-bottom: 2px dashed #C0C0C0;
 }
-header h2 {
+@media only screen and (min-width: 1129px) {
+  header {
+    height: 240px;
+  }
+  header img {
+    display: none;
+  }
+  header h2 {
+    font-size: 10rem;
+    margin-top: -10rem;
+  }
+}
+header .text-content {
   padding-top: 20px;
+}
+@media only screen and (min-width: 1129px) {
+  header .text-content {
+    text-align: center;
+    margin-top: 32rem;
+  }
 }
 button {
   background: teal;

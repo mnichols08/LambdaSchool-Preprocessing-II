@@ -6,6 +6,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+
+    @media @tablet {
+
+      align-items: center;
+      width: 100%;
+    }
+
     @media @phone {
       flex-direction: column;
       flex-wrap:nowrap;
@@ -14,9 +21,16 @@
     }
 
 
+
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @desktop-xl {
+        width: 50%;
+      }
+      
       @media @phone {
         width: 100%;
         &:nth-of-type(2) {
@@ -30,6 +44,9 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @desktop-xl {
+        width: 50%;
+      }
       @media @phone {
         width: 100%;
         margin: 0 auto;
@@ -77,6 +94,10 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+      align-items: center;
+    }
+
     @media @phone {
       flex-direction: column;
       align-items: center;
@@ -85,6 +106,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @tablet {
+        width: 50%;
+      }
 
       @media @phone {
         width: 85%;
