@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  font-weight: 600;
 }
 html,
 body {
@@ -488,17 +489,22 @@ nav div a:hover {
   }
 }
 header {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   border-bottom: 2px dashed #C0C0C0;
+}
+header h2 {
+  padding-top: 20px;
 }
 button {
   background: teal;
   color: #fff;
-  border-radius: 1rem;
-  padding: 1rem;
+  border-radius: 1.3rem;
+  padding: 1.2rem;
   border: 0;
   transition: all 0.2s;
-  width: 100%;
+  width: 84%;
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 button:hover {
   background: #00b3b3;
