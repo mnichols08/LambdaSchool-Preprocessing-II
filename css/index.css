@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 80%;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -179,6 +184,7 @@ img {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    width: 100%;
   }
 }
 .home .content-section .text-content {
@@ -187,8 +193,7 @@ img {
 }
 @media only screen and (max-width: 500px) {
   .home .content-section .text-content {
-    width: 75%;
-    align-items: center;
+    width: 100%;
   }
   .home .content-section .text-content:nth-of-type(2) {
     order: -1;
@@ -200,9 +205,8 @@ img {
 }
 @media only screen and (max-width: 500px) {
   .home .content-section .img-content {
-    width: 75%;
-    margin: auto;
-    align-items: center;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 .home .content-section .img-content img {
@@ -227,6 +231,11 @@ img {
 .home .content-destination img {
   border-radius: 10px;
 }
+@media only screen and (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
@@ -245,7 +254,7 @@ img {
 }
 @media only screen and (max-width: 500px) {
   .home .content-pick .destination {
-    width: 75%;
+    width: 85%;
   }
 }
 .u-text-center {
@@ -481,12 +490,6 @@ nav div a:hover {
 header {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
-}
-@media only screen and (max-width: 500px) {
-  header.container .text-content {
-    width: 75%;
-    margin: auto;
-  }
 }
 button {
   background: teal;
