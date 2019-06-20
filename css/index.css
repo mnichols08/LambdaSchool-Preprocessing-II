@@ -525,6 +525,11 @@ nav div {
   max-width: 800px;
   margin: auto;
 }
+@media only screen and (min-width: 1129px) {
+  nav div {
+    max-width: 1000px;
+  }
+}
 nav div a {
   color: #000;
   font-size: 2rem;
