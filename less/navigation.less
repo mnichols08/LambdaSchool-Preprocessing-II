@@ -1,11 +1,19 @@
 // Navigation Styles here
 nav {
     border-bottom: 2px dashed @navigation-border;
+    @media @desktop {
+        background: #fff;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: 0 1rem 1rem rgba(black,.5);
+    }
     @media @desktop-xl {
         background: #fff;
         position: fixed;
         top: 0;
         width: 100%;
+        box-shadow: 0 1rem 1rem rgba(black,.5);
     }
     div{
         max-width: 800px;
