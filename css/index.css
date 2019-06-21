@@ -168,15 +168,16 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  transition: all 0.5s;
+  transition: 0.5s all;
 }
-@media only screen and (min-width: 1129px) {
+@media only screen and (min-width: 1400px) {
   .container {
-    max-width: 1000px;
+    max-width: 2000px;
+    padding: 0 15%;
     width: 100%;
   }
 }
-@media only screen and (min-width: 51px) and (max-width: 800px) {
+@media only screen and (min-width: 51px) and (max-width: 1024px) {
   .container {
     width: 90%;
   }
@@ -186,13 +187,22 @@ img {
     width: 80%;
   }
 }
+.home {
+  z-index: 1;
+  background: #fff;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media only screen and (min-width: 51px) and (max-width: 800px) {
+.home .content-section:first-child {
+  border-bottom: 2px dashed #C0C0C0;
+  padding: 3rem 0;
+  margin-top: -3rem;
+}
+@media only screen and (min-width: 51px) and (max-width: 1024px) {
   .home .content-section {
     align-items: center;
     width: 100%;
@@ -210,7 +220,7 @@ img {
   width: 48%;
   padding-right: 1%;
 }
-@media only screen and (min-width: 1129px) {
+@media only screen and (min-width: 1400px) {
   .home .content-section .text-content {
     width: 50%;
   }
@@ -227,7 +237,7 @@ img {
   width: 48%;
   padding-left: 1%;
 }
-@media only screen and (min-width: 1129px) {
+@media only screen and (min-width: 1400px) {
   .home .content-section .img-content {
     width: 50%;
   }
@@ -271,7 +281,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-@media only screen and (min-width: 51px) and (max-width: 800px) {
+@media only screen and (min-width: 51px) and (max-width: 1024px) {
   .home .content-pick {
     align-items: center;
   }
@@ -286,7 +296,7 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
-@media only screen and (min-width: 51px) and (max-width: 800px) {
+@media only screen and (min-width: 51px) and (max-width: 1024px) {
   .home .content-pick .destination {
     width: 50%;
   }
@@ -503,7 +513,7 @@ img {
 nav {
   border-bottom: 2px dashed #C0C0C0;
 }
-@media only screen and (min-width: 800px) and (max-width: 1129px) {
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
   nav {
     background: #fff;
     position: fixed;
@@ -512,7 +522,7 @@ nav {
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
   }
 }
-@media only screen and (min-width: 1129px) {
+@media only screen and (min-width: 1400px) {
   nav {
     background: #fff;
     position: fixed;
@@ -524,8 +534,9 @@ nav {
 nav div {
   max-width: 800px;
   margin: auto;
+  transition: 0.5s all;
 }
-@media only screen and (min-width: 1129px) {
+@media only screen and (min-width: 1400px) {
   nav div {
     max-width: 1000px;
   }
@@ -534,7 +545,7 @@ nav div a {
   color: #000;
   font-size: 2rem;
   text-decoration: none;
-  transition: all 0.2s;
+  transition: 0.2s all;
 }
 nav div a:hover {
   text-decoration: underline;
@@ -549,8 +560,13 @@ nav div a:hover {
     margin-bottom: -3rem;
   }
 }
-@media only screen and (min-width: 1129px) {
+.desktop-only {
+  display: none;
+  z-index: -1;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
   .desktop-only {
+    display: block;
     background: url(../img/fun-bus.jpg);
     opacity: 0.25;
     position: absolute;
@@ -562,14 +578,43 @@ nav div a:hover {
     background-position: center;
     background-attachment: fixed;
     background-position-y: -18rem;
+  }
+  .desktop-only video {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .desktop-only {
+    display: block;
+    opacity: 0.25;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .desktop-only video {
+    display: block;
     z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 header {
   padding-bottom: 10px;
   border-bottom: 2px dashed #C0C0C0;
 }
-@media only screen and (min-width: 1129px) {
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+  header img {
+    display: none;
+  }
+  header h2 {
+    font-size: 10rem;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1400px) {
   header {
     height: 240px;
   }
@@ -581,7 +626,7 @@ header {
     margin-top: -10rem;
   }
 }
-@media only screen and (min-width: 800px) and (max-width: 1129px) {
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
   header.container {
     margin-top: 8rem;
   }
@@ -589,7 +634,7 @@ header {
 header .text-content {
   padding-top: 20px;
 }
-@media only screen and (min-width: 1129px) {
+@media only screen and (min-width: 1400px) {
   header .text-content {
     text-align: center;
     margin-top: 32rem;
@@ -601,7 +646,7 @@ button {
   border-radius: 1.3rem;
   padding: 1.2rem;
   border: 0;
-  transition: all 0.2s;
+  transition: 0.2s all;
   width: 84%;
   font-weight: 700;
   font-size: 1.8rem;
@@ -648,7 +693,7 @@ form textarea {
   background-color: rgba(255, 255, 255, 0.5);
   border-bottom: 3px solid transparent;
   display: block;
-  transition: all 0.2s;
+  transition: 0.2s all;
 }
 form input:focus,
 form select:focus,
@@ -670,7 +715,7 @@ form textarea::-webkit-input-placeholder {
 form label {
   font-size: 1.2rem;
   font-weight: 700;
-  transition: all 0.2s;
+  transition: 0.2s all;
 }
 form button {
   width: 30%;

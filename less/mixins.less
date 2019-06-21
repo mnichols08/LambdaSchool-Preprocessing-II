@@ -1,11 +1,14 @@
 // Mixins in here
+.transition(@dur: .5s, @prop: all) {
+    transition: @dur @prop;
+}
 .button(@color,@pos){
 background: @color;
 color: #fff;
 border-radius: 1.3rem;
 padding: 1.2rem;
 border: 0;
-transition: all .2s;
+.transition(.2s);
 width: 84%;
 font-weight: 700;
 font-size: 1.8rem;

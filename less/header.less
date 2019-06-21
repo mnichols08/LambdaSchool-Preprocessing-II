@@ -1,20 +1,51 @@
 .desktop-only {
-    @media @desktop-xl {
-    background: url(../img/fun-bus.jpg);
-    opacity: .25;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 56rem;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position-y: -18rem;
+    display:none;
     z-index: -1;
+    @media @desktop {
+        display:block;
+        background: url(../img/fun-bus.jpg);
+        opacity: .25;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 56rem;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-position-y: -18rem;
+        video {
+            display:none;
+        }
+    }
+    @media @desktop-xl {
+        display: block;
+        opacity: .25;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        video {
+            display:block;
+            z-index:-1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
     }
 }
 header {
+    @media @desktop {
+        img {
+            display: none;
+        }
+        
+        h2 {
+            font-size: 10rem;
+            text-align: center;
+        }
+    }
     @media @desktop-xl {
         img {
             display: none;
