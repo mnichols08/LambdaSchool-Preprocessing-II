@@ -1,7 +1,7 @@
 {
-  "name": "preprocessing-ii",
+  "name": "advanced-css--sprint",
   "version": "1.0.0",
-  "description": "Lambda School Project - Advanced CSS - Preprocessing II",
+  "description": "Sprint Challenge: Advanced CSS - Space Walkers Web Page",
   "scripts": {
     "compile-less": "lessc less/index.less css/index.css",
     "devserver": "live-server",
